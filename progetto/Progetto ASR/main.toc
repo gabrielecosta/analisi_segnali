@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1}Introduzione}{2}{}%
+\contentsline {chapter}{\numberline {2}Speaker Identification e Verification}{3}{}%
+\contentsline {section}{\numberline {2.1}Descrizione del problema}{3}{}%
+\contentsline {section}{\numberline {2.2}Valutazione dei sistemi: metriche e metodologie}{4}{}%
+\contentsline {section}{\numberline {2.3}Scenari applicativi}{5}{}%
+\contentsline {chapter}{\numberline {3}Speech Features \& Embeddings}{7}{}%
+\contentsline {section}{\numberline {3.1}Speech Features}{7}{}%
+\contentsline {subsection}{\numberline {3.1.1}Cepstrum}{8}{}%
+\contentsline {subsection}{\numberline {3.1.2}Filter Banks e Mel-Scale}{8}{}%
+\contentsline {subsection}{\numberline {3.1.3}Mel-Frequency Cepstral Coefficients (MFCCs) }{8}{}%
+\contentsline {subsection}{\numberline {3.1.4}Delta e Delta Delta}{9}{}%
+\contentsline {section}{\numberline {3.2}Speech Embeddings}{10}{}%
+\contentsline {subsection}{\numberline {3.2.1}I-Vectors e Deep Embeddings}{10}{}%
+\contentsline {subsection}{\numberline {3.2.2}X-Vectors e TDNNs}{10}{}%
+\contentsline {chapter}{\numberline {4}Speaker Models e Backend}{11}{}%
+\contentsline {section}{\numberline {4.1}Applicazione del Deep Learning}{11}{}%
+\contentsline {section}{\numberline {4.2}Metodologia del progetto}{12}{}%
+\contentsline {section}{\numberline {4.3}Architettura Proposta}{13}{}%
+\contentsline {chapter}{\numberline {5}Sezione Sperimentale}{15}{}%
+\contentsline {section}{\numberline {5.1}Dataset utilizzato}{15}{}%
+\contentsline {section}{\numberline {5.2}Dettagli Esperimenti}{15}{}%
+\contentsline {section}{\numberline {5.3}Risultati sperimentali}{16}{}%
+\contentsline {section}{\numberline {5.4}Conclusioni}{19}{}%

@@ -1,0 +1,244 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{irum2019speaker}{article}{}
+      \name{author}{2}{}{%
+        {{hash=71ed16e2dc70b3407be7173d459c7791}{%
+           family={Irum},
+           familyi={I\bibinitperiod},
+           given={Amna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f1bd956fa60fb8e2f80dfcdc89d3bebd}{%
+           family={Salman},
+           familyi={S\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{59711c1a3a770e6e5e333bf136df1276}
+      \strng{fullhash}{59711c1a3a770e6e5e333bf136df1276}
+      \strng{bibnamehash}{59711c1a3a770e6e5e333bf136df1276}
+      \strng{authorbibnamehash}{59711c1a3a770e6e5e333bf136df1276}
+      \strng{authornamehash}{59711c1a3a770e6e5e333bf136df1276}
+      \strng{authorfullhash}{59711c1a3a770e6e5e333bf136df1276}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Machine Learning and Computing}
+      \field{number}{1}
+      \field{title}{Speaker verification using deep neural networks: A}
+      \field{volume}{9}
+      \field{year}{2019}
+    \endentry
+    \entry{snyder2017deep}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=13f776102299486ab8d14d6ae6b21f12}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=96d6a5a78037d83cb68d277d0ed4d7c9}{%
+           family={Garcia-Romero},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e37bd3eba929f71a8a0351899f3870d5}{%
+           family={Povey},
+           familyi={P\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d787f09b6c6cc374a9ad21fe9120fc1f}{%
+           family={Khudanpur},
+           familyi={K\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{fullhash}{5641da1aeef3332290cb1a07bf5211fe}
+      \strng{bibnamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authorbibnamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authornamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authorfullhash}{5641da1aeef3332290cb1a07bf5211fe}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Interspeech}
+      \field{title}{Deep neural network embeddings for text-independent speaker verification.}
+      \field{volume}{2017}
+      \field{year}{2017}
+      \field{pages}{999\bibrangedash 1003}
+      \range{pages}{5}
+    \endentry
+    \entry{snyder2018x}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=13f776102299486ab8d14d6ae6b21f12}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=96d6a5a78037d83cb68d277d0ed4d7c9}{%
+           family={Garcia-Romero},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d38d38c332fb3f230005387f1f5a53b3}{%
+           family={Sell},
+           familyi={S\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e37bd3eba929f71a8a0351899f3870d5}{%
+           family={Povey},
+           familyi={P\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d787f09b6c6cc374a9ad21fe9120fc1f}{%
+           family={Khudanpur},
+           familyi={K\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{fullhash}{92c15fdf92257a7317dc922e8effcb58}
+      \strng{bibnamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authorbibnamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authornamehash}{03a115e2c996025eb3d5d19be8796a4a}
+      \strng{authorfullhash}{92c15fdf92257a7317dc922e8effcb58}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE international conference on acoustics, speech and signal processing (ICASSP)}
+      \field{title}{X-vectors: Robust dnn embeddings for speaker recognition}
+      \field{year}{2018}
+      \field{pages}{5329\bibrangedash 5333}
+      \range{pages}{5}
+    \endentry
+    \entry{tirumala2016review}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=95ed5b9eb286d60463a26d8a151277bf}{%
+           family={Tirumala},
+           familyi={T\bibinitperiod},
+           given={Sreenivas\bibnamedelima Sremath},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8cef4bd556f98e4d0e1500b341628b11}{%
+           family={Shahamiri},
+           familyi={S\bibinitperiod},
+           given={Seyed\bibnamedelima Reza},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \strng{fullhash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \strng{bibnamehash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \strng{authorbibnamehash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \strng{authornamehash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \strng{authorfullhash}{23eb0149f22f8edac7d6cd4f542024fe}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 8th international conference on signal processing systems}
+      \field{title}{A review on deep learning approaches in speaker identification}
+      \field{year}{2016}
+      \field{pages}{142\bibrangedash 147}
+      \range{pages}{6}
+    \endentry
+    \entry{togneri2011overview}{article}{}
+      \name{author}{2}{}{%
+        {{hash=22d8614f0ae54d140413d44e2f1e3fb0}{%
+           family={Togneri},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c860b25e82e7325e99f5d4b409ca6b1a}{%
+           family={Pullella},
+           familyi={P\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fd937f275028c6ff11de56b41b33268b}
+      \strng{fullhash}{fd937f275028c6ff11de56b41b33268b}
+      \strng{bibnamehash}{fd937f275028c6ff11de56b41b33268b}
+      \strng{authorbibnamehash}{fd937f275028c6ff11de56b41b33268b}
+      \strng{authornamehash}{fd937f275028c6ff11de56b41b33268b}
+      \strng{authorfullhash}{fd937f275028c6ff11de56b41b33268b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE circuits and systems magazine}
+      \field{number}{2}
+      \field{title}{An overview of speaker identification: Accuracy and robustness issues}
+      \field{volume}{11}
+      \field{year}{2011}
+      \field{pages}{23\bibrangedash 61}
+      \range{pages}{39}
+    \endentry
+    \entry{tu2022survey}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e7cb1a277d261e63e3d968debdbaba69}{%
+           family={Tu},
+           familyi={T\bibinitperiod},
+           given={Youzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3692a0834aa4f676d5e7d198a1c23d12}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Weiwei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f82cd3f4fa8687920c25d0dd51d6fbb6}{%
+           family={Mak},
+           familyi={M\bibinitperiod},
+           given={Man-Wai},
+           giveni={M\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \strng{fullhash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \strng{bibnamehash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \strng{authorbibnamehash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \strng{authornamehash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \strng{authorfullhash}{72c9d42da9cbba2e2635bf0acbf8388d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A survey on text-dependent and text-independent speaker verification}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{99038\bibrangedash 99049}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

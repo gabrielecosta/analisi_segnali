@@ -1,0 +1,101 @@
+\chapter{Speech Features \& Embeddings}
+\label{ch:features}
+In molte applicazioni di speech processing è spesso conveniente ed utile avere una rappresentazione parametrica o alternativa dell'informazione
+trasportata dal segnale. L'informazione trasportata dal segnale infatti include importanti fattori come il pitch period, il modello dell'impulso glottale,
+l'eccitazione, il modello del tratto vocale: tutte informazioni utili a poter distinguere i diversi speaker in task come lo speaker identification
+e lo speaker verification. L'obiettivo della Digital Speech Processing (DSP) è proprio quello di trovare metodi per poter elaborare i segnali speech audio
+e poter quindi estrarre queste particolari informazioni in forma parametrica, avendo difatti una \textbf{rappresentazione alternativa} del segnale. 
+
+Questo permette difatti di andare ad estrarre \textbf{speech features}, dunque parametri o caratteristiche, che possiamo dare in input a modelli di machine learning,
+per permette alle reti di poter eseguire particolari combiti. Spesso però il machine learning ha una duplice valenza: è spesso usato sia come "modello" di elaborazione
+delle features, sia come modello per estrarre rappresentazioni più raffinate delle features in input. Queste rappresentazioni più raffinate prendono il nome
+di \textbf{speech embeddings}, e permettono di aggiungere un ulteriore informazione: permette difatti di aggregare i contributi di ogni singola features in ingresso,
+cercando di ottenere rappresentazioni non lineari più complesse e talvolte più discriminanti.
+
+\section{Speech Features}
+In ogni caso, le proprietà dello speech cambiano lentamente nel tempo e nella frequenza. Per poter fronteggiare questo fenomeno si ricorre spesso a
+metodi di analisi definiti come \textit{short time}, dove andiamo ad eseguire una analisi frame per frame. Questo deriva dal fatto che effettuando una analisi
+short time a livello di frame, andiamo a processare singoli segmenti cui possiamo assumere abbiano proprietà fisse e permettono di estrarre le informazioni relative
+per lo speech processing. Le metodologie di short time possono essere o basate su tempo o su frequenza. L'analisi time-domain è utile per andare ad isolare
+segmenti dove è presente un pezzo di segnale \textit{voiced} oppure \textit{unvoiced}. Permette infatti di isoalre meglio segmenti dal rumore di fondo, utili per massimizzare
+ulteriormente l'estrazione di features solo su segmenti definiti come voiced, ad esempio integrando un \textbf{Voice Activity Detector (VAD)}, che tronca andando a valutare
+l'energia del segmento, ad esempio con analisi \textbf{Short Time Energy}. 
+
+Tuttavia, nei task di \textbf{Speaker Verification} e \textbf{Speaker Identification}, conviene trattare di metodi short time basati sulla frequenza,
+dal momento che molte informazioni riguardanti formanti e armoniche (utili per poter modellare un filtro che rappresenti il tratto vocale di una persona, quindi un modello
+che riesce a parametrizzare), oltre che informazioni definibili come "percettive". Alcune features basate su metodi frequency-domain soon gli MFCCs (Mel Frequency Cepstral Coefficients).
+Talvolta abbianiamo a queste features anche altri valori di derivata prima o seconda, per poter esprimere anche la variabilità dell'analisi short time, come i metodi Delta e Delta Delta.
+
+\subsection{Cepstrum}
+Il cepstrum è definito come la IDFT della log-magnitudo della DFT del segnale, ovvero:
+\[ c[n] = F^{-1}[log(|F[x[n]]|) ]\]
+Dove i due operatori sono la trasformata discreta di fourier DFT e la inverse DFT, la IDFT. A partire del cepstrum possiamo definire una rappresentazione alternativa,
+ma non ci basta ancora: vorremmo smussare le attenuazioni, estraendo anche componenti come il pitch e sopratutto modellare l'inviluppo della trasformata stessa.
+Tuttavia il cepstrum ci permette di poter separare la sorgente (voiced o treno di impulsi, e unvoiced o rumore gaussiano) ed il filtro (il tratto vocale), riuscendo quindi 
+a modelleare in maniera compatta l'inviluppo spettrale. 
+
+\subsection{Filter Banks e Mel-Scale}
+Lo smooth con filterbanks riesce ad approssimare piccole variazioni, rendendo le features più robuste e meno rumorose. I filterbanks sono una serie di filtri
+triangolari che permettono di andare a catturare selettivamente energia da uno specifico range di frequenze, pesando e sommando i bins spettrali in quella regione.
+Questo processo permette di approssimare lo spettro e fornire una rappresentazione compatta di come l'energia è distribuita lungo le diverse bande di frequenza.
+La rappresentazione smoothed cattura una forma complessiva dello spettro definita come "envelope", esaltando l'importanza delle features da un punto di vista percettivo.
+
+\subsection{Mel-Frequency Cepstral Coefficients (MFCCs) }
+La scala di Mel è una scala percettiva di pitch che approssima il modo in cui gli umani percepiscono i suoni delle frequenze. La scala di Mel è progettata per riflettere una relazione
+non lineare tra la frequenza fisica e il tono percepito, risultando più sensibile alle basse frequenze, il quale riesce a farci a capire come l'orecchio umano percepisce
+il suono. Formiamo quindi un filterbank cosicché i centri dei triangoli sono le frequenze che corrispondono a equal distanza sulla scala di mel. Effettuiamo quindi
+una analisi short time dove applichiamo alla trasformata DFT i valori pesi del filtro filteranks:
+\[ MF_m[r] = \frac{1}{A_r} \sum_{l=L_r}^{U_r} |V_r[k]X_m[k]|^2\]
+Dove $V_r[k]$ è la funzione di peso per il filtro r-esimo filtrando gli indici della DFT da $L_r$ e $U_r$ e $A_r$ definito come fattore di normalizzazione per il filtro r-esimo di mel. 
+\[ A_r =\sum_{l=L_r}^{U_r} |V_r[k]|^2\]
+L'inviluppo di mel chiaramente modella le basse frequenze accuratamente, il quale è molto importante perché è qua che risiedono tutte le formanti. 
+Le alte frequenze sono poco modellate, il quale generalmente è dove non è presente la maggior parte dell'energia. 
+
+Tuttavia, se cambiamo il come calcolare la trasformata (cambiamo operatore), usando la Discrete Cosine Transform (DCT), utile per decorrelare dati sequenzialmente correlati,
+prendiamo la DCT del Log-Mel Spectrum, il quale è conosciuto come \textbf{Mel-Frequency Cepstral Coefficient (MFCC)}. Eseguiamo prima una mappatura nella frequenza di mel,
+poi prendiamo il log spettro e infine applichiamo la IDCT. Ad ogni frame m-esimo, la trasformata del log della magnitudo del risultato dei filtri viene calcolato per 
+formare la funzione \textbf{$MFCC_m[n]$}, definita come:
+\[ MFCC_m[n] = \frac{1}{R}\sum_{r=1}^{R}log(MF_m[r])cos\left[ \frac{2\pi}{R} \left( r + \frac{1}{2} \right) \right]\]
+
+\subsection{Delta e Delta Delta}
+Il segnale acustico è una sequenza di trasizioni tra fonemi, quindi dobbiamo capire quando riconoscerne uno e scinderlo dall'altro. Eseguendo una analisi short time ci portiamo
+appresso questo fatto, e bisogna tenerne in considerazione quando calcoliamo le features. Tuttavia spesso è più informativo analizzare la forma generale della traccia
+della features in relazione con le variazioni acustiche. Un metodo comune per estrarre informazioni circa le transizioni per determinare la prima differenza delle 
+feature, conosciute come delta di feature. Specificamente, per una feature $f_k$ al tempo k, il corrispondente delta è definito come:
+\[ \Delta _k = f_k - f_{k-1}\]
+Mentre la delta-delta è definita come:
+\[ \Delta \Delta_k = \Delta_k - \Delta_{k-1} \]
+Queste ulteriori features permettono di definire  ed interpretrare il segnale come la derivata prima e la derivata seconda. I delta e i deltas sono componenti 
+classici degli algoritmi di machine learning.
+
+\section{Speech Embeddings}
+L'obiettivo degli speech embeddings è quello di trasforare le sequenze di features estratte a partire dei metodi descritti prima
+in un vettore che cattura le caratteristiche distintive di ogni singolo speaker, rendendolo adatto per compiti come la speaker verification ed identification. 
+Questo vettore processato a partire dalle speech features prende il nome di \textbf{embeddings}. In letteratura sono stati usati diversi
+embeddings, spesso combinando diverse features tra di loro, sebbene oggi la strada più promettente è quella dell'utilizzo di metodi di deep learning. 
+Gli embeddings estratti dai metodi di deep learning rappresentano l'identità di una persona tramite un vettore a dimensione fissa codificato da una espressione
+vocale di lunghezza variabile. 
+
+\subsection{I-Vectors e Deep Embeddings}
+Gli i-vectors sono stati per anni una rappresentazione standard e di successo per la speaker recognition.
+questi sono vettori a bassa dimensione derivati da un modello statistico chiamato Total Variability Space. Essi catturano 
+sia la variabilità legata al parlante che quella legata al canale di comunicazione. Nonostante la loro comprovata efficacia, 
+mostrano alcune limitazioni, soprattutto quando la durata dell'espressione vocale è breve. 
+L'introduzione delle Deep Neural Networks ha rivoluzionato il campo degli embeddings: l'idea è di addestrare una DNN per produrre 
+embedding che siano altamente discriminativi per l'identità del parlante. 
+Un approccio chiave è l'estrazione di embedding da segmenti di parlato. Invece di aggregare informazioni su un'intera espressione 
+vocale all'inizio del processo, le DNN possono elaborare finestre temporali più piccole del segnale (segmenti) e poi aggregare le 
+informazioni a un livello successivo. Ad esempio, gli autori di \cite{snyder2017deep} hanno proposto un sistema in cui gli embeddings 
+vengono estratti da una rete di deep learning. La caratteristica distintiva di questo approccio è l'utilizzo di pooling temporale, che aggrega le informazioni 
+estratte dalla rete su segmenti di input. Questo permettealla rete di essere addestrata per discriminare gli speakers direttamente sulla base 
+del segmento vocale. 
+
+\subsection{X-Vectors e TDNNs}
+L'evoluzione degli embedding basati su DNN ha portato allo sviluppo degli x-vectors, che rappresentano una delle tecniche più avanzate per la 
+speaker recognition. Come descritto da \cite{snyder2018x}, gli x-vectors sono embedding DNN robusti ottenuti utilizzando una particolare 
+architettura di rete neurale nota come Time Delay Neural Network (TDNN).
+Le TDNNs sono particolarmente adatte per il trattamento di sequenze temporali come lo speech, in quanto possono catturare contesti temporali 
+più ampi senza la necessità di un numero eccessivo di parametri, grazie all'uso di connessioni ritardate e strati con pooling temporale. 
+L'architettura TDNN consente alla rete di apprendere relazioni a lungo termine tra le caratteristiche vocali a livello di segmenti. 
+Nello specifico, gli x-vectors sono estratti da una DNN. 
+

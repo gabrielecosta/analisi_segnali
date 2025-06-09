@@ -1,0 +1,101 @@
+\documentclass[12pt]{report}
+% Pacchetti necessari
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{epstopdf}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{physics}
+\usepackage{tabularx}
+\usepackage{matlab-prettifier}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{etoolbox}
+\usepackage{mathtools}
+\usepackage{nccmath}
+\usepackage{algorithm}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=3.5cm}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools}
+\usepackage{amsmath}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+% Pacchetti per intestazioni e piè di pagina
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{biblio.bib}  % Point to your .bib file
+
+\begin{document}
+\input{style}
+
+\begin{titlepage}
+    \centering
+    
+    % Logo dell'università
+    \includegraphics[width=0.6\textwidth]{logounipa.png} 
+    
+    \vspace{1cm}
+    
+    % Nome dell'università
+    {\large Università degli Studi di Palermo \par}
+    
+    \vspace{1cm}
+    
+    % Nome della materia
+    {\Large \bfseries Analisi Intelligente dei Segnali \par}
+    
+    \vspace{1.5cm}
+    
+    % Nome del progetto con grassetto più marcato
+    {\Huge \textbf{Speech Features per i tasks di \\ Speaker Identification e Verification} \par}
+    \vspace{2cm}
+    
+    % Nome del docente a sinistra e nome dello studente a destra
+    % Nome del docente a sinistra e nome dello studente a destra
+    \noindent
+    \begin{minipage}{0.45\textwidth}
+        \raggedright
+        {\large \bfseries Docente:} \\
+        {\large Sabato Marco Siniscalchi}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \raggedleft
+        {\large \bfseries Autore:} \\
+        {\large Costa Gabriele Nicolò}
+    \end{minipage}
+
+
+    
+    \vspace{2cm}
+    
+    % Nome del corso
+    {\Large \bfseries Corso di Laurea \par}
+    {\large Ingegneria Informatica LM-32 \par}
+
+    \vspace{2cm}
+
+    % Anno accademico centrato
+    {\Large \bfseries Anno Accademico 2024/25 \par}
+    
+\end{titlepage}
+
+\tableofcontents
+\input{intro.tex}
+\newpage
+\input{ch1/01.tex}
+\newpage
+\input{ch2/02.tex}
+\newpage 
+\input{ch3/03.tex}
+\newpage 
+\input{ch4/04.tex}
+
+\printbibliography
+
+\end{document}
