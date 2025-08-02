@@ -238,10 +238,10 @@ INPUT .\intro.tex
 INPUT .\intro.tex
 INPUT intro.tex
 INPUT C:\Users\gabri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\gabri\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\ch1\01.tex
 INPUT .\ch1\01.tex
 INPUT ch1\01.tex
-INPUT C:\Users\gabri\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\ch1\speaker_id.png
 INPUT .\ch1\speaker_id.png
 INPUT .\ch1\speaker_id.png

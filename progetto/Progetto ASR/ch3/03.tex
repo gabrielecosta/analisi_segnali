@@ -7,8 +7,9 @@ Il Deep Learning (DL) grazie ad approcci e metodologie basate sul machine learni
 delle features estratte. \\
 Il deep learning \cite{tirumala2016review} permette di poter elaborare le features ed estrarre rappresentazioni più complesse dei dati, permettendo quindi di realizzare dei
 veri e propri \textbf{Speaker Models}. Gli speaker models costituiscono il nostro database, dove possiamo andare a salvare le caratteristiche o 
-in generale le informazioni importanti per poter riconoscere gli utenti. Una considerazione importante va fatta sui modelli utilizzati, come le Deep Neural Network (DNN),
-reti ricorrenti con memoria (come le Recurrent Neural Network, RNN, con Long Short Term Memory, LSTM) o reti che applicano filtri di convoluzione Convolutional Neural Network.
+in generale le informazioni importanti per poter riconoscere gli utenti. 
+Una considerazione importante va fatta sui modelli utilizzati, come le Deep Neural Network (DNN), reti ricorrenti con memoria (come le Recurrent Neural Network, RNN, con Long Short Term Memory, LSTM) 
+o reti che applicano filtri di convoluzione Convolutional Neural Network.
 Sebbene le DNN siano quelle più semplici e di facile interpretazione, permettono semplicemente di estrarre pattern attraverso layer multistrato. Mentre, la combinazione
 di reti RNN e CNN permette di unire i due principali vantaggi di queste reti: capacità di estrazione di features complesse applicando filtri convolutivi (tramite la CNN),
 e capacità di memoria e ricordo (tramite la RNN con LSTM). In ogni caso, anche reti più complesse sono state proposte, sia per i task che per estrazione di embedding. 
@@ -17,7 +18,7 @@ Un altro aspetto chaive, riguardando le immagini sugli schemi di funzionamento, 
 backend del sistema, dal momento che spesso questa fase avviene dopo che è stato effettuato l'\textbf{enrolment} del modello. Spesso come backend si preferisce lavorare con gli embeddings 
 elaborati dalle reti di DL, che permettono di lavorare con informazioni più raffinate. Tipici backend prevedono l'applicazione di modelli come le Gaussian Mixture Models (GMM),
 che usiamo per estrarre degli scores di similarità con cui valutare score di EER per stabilire l'affidabilità del modello stesso. \\
-Gli autori di \cite{irum2019speaker} ad esempio hanno svolto un lavoro esaustivo sulla possibilità di applicare il Deep Learning nel task di Speaker Verification,
+Gli autori di \cite{irum2019speaker} ad esempio hanno valutato la possibilità di applicare il Deep Learning nel task di Speaker Verification,
 andando a riassumere quali sono i principali modelli utilizzati sia come speaker models che come backend. Una tabella riassuntiva difatti è portata in Fig.\ref{fig:studiopaper}.
 Come si evince dallostudio condotto, spesso ci basiamo su score di similarità con distanza coseno o PLDA, avendo comunque sistemi basati su scores di un backend basato su
 GMM-UBM (ovvero le \textbf{Gaussian Mixture Model - Universal Background Model}), che permette di realizzare un modello probabilistico che rappresenta la distribuzione di dati
@@ -38,7 +39,7 @@ tramite scores di similarità valutando il rapporto di verosimiglianza. Per valu
 ottimale, ricordando che EER viene valutato quando FAR (False Acceptance Rate) e FRR (False Rejection Rate). \\
 
 \section{Architettura Proposta}
-Uno schema esemplificato della metodologia applicata è riportata in Fig.\ref{fig:architettura}.
+Uno schema esemplificato della metodologia applicata è riportata in Fig.\ref{fig:architettura}. 
 Lo schema prevede una prima fase iniziale di Speaker Identification, dove a partire dagli speakers autorizzati (closed-set), estraiamo
 features (ad esempio MFCCs) ed addestriamo uno speaker models basato su Deep Learning. Dopodiché, lo stesso modello verrà usato come estrattore di embeddings
 per poter successivamente addestrare un modello di GMM-UBM (Universal Background Model, il nostro backend) per poter realizzare un sistema che permetta di fare

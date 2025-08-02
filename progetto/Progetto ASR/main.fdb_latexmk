@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1749471404.61429 "main.bcf" "main.bbl" "main" 1749472863.17694 0
+["biber main"] 1749471404.61429 "main.bcf" "main.bbl" "main" 1749655861.09903 0
   "biblio.bib" 1749396705 1814 9d6a62833f9f5590e02eb11cb777a02a ""
-  "main.bcf" 1749472862 108617 4280cf05f6c77df74ab512be3139edf6 "pdflatex"
+  "main.bcf" 1749655860 108617 4280cf05f6c77df74ab512be3139edf6 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1749472861.27795 "c:/Users/gabri/OneDrive/Desktop/gabriele/analisi_segnali/progetto/Progetto ASR/main.tex" "main.pdf" "main" 1749472863.1776 0
+["pdflatex"] 1749655858.68016 "c:/Users/gabri/OneDrive/Desktop/gabriele/analisi_segnali/progetto/Progetto ASR/main.tex" "main.pdf" "main" 1749655861.09996 0
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1749378069 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1749330636 14064 f867ea498cf93a5edc86277a3cea3c8e ""
   "C:/Users/gabri/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1748550475 24225046 141baf2369b51dfb74f4b4f4acfc2d72 ""
@@ -122,27 +122,27 @@
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "architettura.pdf" 1749390274 40059 be33daa0b9828d013a6c2a137164db8d ""
-  "c:/Users/gabri/OneDrive/Desktop/gabriele/analisi_segnali/progetto/Progetto ASR/main.tex" 1749378026 2409 1c1b0457ddf0ce8176fefe0d157ddfe7 ""
-  "ch1/01.tex" 1749472304 8369 ff391218a7b47db3b2d4030dcea5b4fb ""
+  "c:/Users/gabri/OneDrive/Desktop/gabriele/analisi_segnali/progetto/Progetto ASR/main.tex" 1749653367 2409 23065bcf856f0fdbc460b56723fda56d ""
+  "ch1/01.tex" 1749654805 8632 31186eee7fb1c8f2b6b3e0e8393424dd ""
   "ch1/speaker_id.png" 1749374272 58710 7fa509ad99631719163f5dc4b17377bd ""
   "ch1/speaker_ver.png" 1749376355 76626 14d5f38399d511520946ac6b7c77b1ea ""
-  "ch2/02.tex" 1749472413 10872 587ad13b825630201cde3e2c8011e846 ""
-  "ch3/03.tex" 1749472623 6991 3d32edf1142e6070d6be0d816fd1631c ""
+  "ch2/02.tex" 1749655143 10882 a79d05b4b6b11a7f85cc0332b4017740 ""
+  "ch3/03.tex" 1749655444 6974 eb3904e62b26b3129029b517083c7bf6 ""
   "ch3/studio.png" 1749381130 174280 538a15f00af185726d828c0c46516244 ""
-  "ch4/04.tex" 1749472860 11513 e179f6ebb114233fcda25078c69f38c9 ""
+  "ch4/04.tex" 1749655857 11544 0a586d99d301e597e14b3ed8635f3a7f ""
   "ch4/cnnlstm.png" 1749397511 26877 555d7729f5cad67972867c3e1b2a4447 ""
   "ch4/dnn1.png" 1749397331 24391 c30dda03ea922749833119f31cf1759a ""
   "ch4/dnn2.png" 1749397389 26525 96c390a09dafc3d5dfec25f7f341d74c ""
   "ch4/idnn.png" 1749397618 25260 691e90006e281f2ff86c79307df32b90 ""
   "ch4/rnn.png" 1749397451 28549 de7106f56487888ce26114f4cb1c4275 ""
   "ch4/xdnn.png" 1749397787 25367 b51b728a73cd0b57e9536e93241d1bcb ""
-  "intro.tex" 1749390733 2906 3c184193cce8e1903ade6693be0cc4a5 ""
+  "intro.tex" 1749653912 1925 e2cf1d84b5ff5249a2f585847c36d079 ""
   "logounipa.png" 1749332663 40233 ebdaeb34459a9c81ee8d1ce415e0a415 ""
-  "main.aux" 1749472862 7113 d9057050ff1780cd53d896781d64b5ff "pdflatex"
+  "main.aux" 1749655860 7113 d9057050ff1780cd53d896781d64b5ff "pdflatex"
   "main.bbl" 1749471406 9783 71768746c43f4fcaf97164458b2d4f42 "biber main"
-  "main.run.xml" 1749472862 2301 fc418833f88d2cf4592b65b247893834 "pdflatex"
-  "main.tex" 1749378026 2409 1c1b0457ddf0ce8176fefe0d157ddfe7 ""
-  "main.toc" 1749472862 1688 446335de33a9b095e718e19e1069c5fb "pdflatex"
+  "main.run.xml" 1749655860 2301 fc418833f88d2cf4592b65b247893834 "pdflatex"
+  "main.tex" 1749653367 2409 23065bcf856f0fdbc460b56723fda56d ""
+  "main.toc" 1749655860 1688 446335de33a9b095e718e19e1069c5fb "pdflatex"
   "style.tex" 1749330252 610 7c364bebdad983b613debbb4de9f12cf ""
   (generated)
   "main.aux"

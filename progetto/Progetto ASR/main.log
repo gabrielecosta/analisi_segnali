@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.29)  9 JUN 2025 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.29)  11 JUN 2025 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,7 +722,7 @@ Chapter 1.
 ] (ch1/01.tex
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--30
+Underfull \hbox (badness 10000) in paragraph at lines 21--29
 
  []
 
@@ -732,30 +732,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--30
 <./ch1/speaker_id.png, id=21, 655.69969pt x 231.11343pt>
 File: ./ch1/speaker_id.png Graphic file (type png)
 <use ./ch1/speaker_id.png>
-Package pdftex.def Info: ./ch1/speaker_id.png  used on input line 37.
+Package pdftex.def Info: ./ch1/speaker_id.png  used on input line 36.
 (pdftex.def)             Requested size: 472.03123pt x 166.37686pt.
 <./ch1/speaker_ver.png, id=22, 525.76425pt x 249.93375pt>
 File: ./ch1/speaker_ver.png Graphic file (type png)
 <use ./ch1/speaker_ver.png>
-Package pdftex.def Info: ./ch1/speaker_ver.png  used on input line 45.
+Package pdftex.def Info: ./ch1/speaker_ver.png  used on input line 44.
 (pdftex.def)             Requested size: 472.03123pt x 224.39293pt.
  [4 <./ch1/speaker_id.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]|\OT1/cmr/m/n/12 Riconoscere l'identit^^Ra dello
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\OT1/cmr/m/n/12 di speak-ers (clas-si-fi-cazione
+ []
+
+
 Underfull \hbox (badness 6961) in paragraph at lines 74--75
 []\OT1/cmr/m/n/12 Precision, Re-call, F1-score
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []|\OT1/cmr/bx/n/12 Speaker Ver-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 79--79
-[]|\OT1/cmr/m/n/12 Verificare se un par-lante ^^Re
+Underfull \hbox (badness 1728) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/12 Verificare se uno speaker ^^Re
  []
 
 
-Overfull \hbox (7.21283pt too wide) in paragraph at lines 66--91
+Overfull \hbox (7.21283pt too wide) in paragraph at lines 66--89
  [][] 
  []
 
@@ -768,12 +778,12 @@ Chapter 4.
 <./ch3/studio.png, id=54, 614.295pt x 382.42876pt>
 File: ./ch3/studio.png Graphic file (type png)
 <use ./ch3/studio.png>
-Package pdftex.def Info: ./ch3/studio.png  used on input line 27.
+Package pdftex.def Info: ./ch3/studio.png  used on input line 28.
 (pdftex.def)             Requested size: 472.03123pt x 293.86417pt.
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 33--39
+Underfull \hbox (badness 10000) in paragraph at lines 34--40
 
  []
 
@@ -783,10 +793,10 @@ pdfTeX warning: pdflatex (file ./architettura.pdf): PDF inclusion: found PDF ver
 <./architettura.pdf, id=63, 581.2917pt x 222.8325pt>
 File: ./architettura.pdf Graphic file (type pdf)
 <use ./architettura.pdf>
-Package pdftex.def Info: ./architettura.pdf  used on input line 49.
+Package pdftex.def Info: ./architettura.pdf  used on input line 50.
 (pdftex.def)             Requested size: 472.03123pt x 180.94894pt.
 [13 <./architettura.pdf>])
-Underfull \hbox (badness 10000) in paragraph at lines 60--96
+Underfull \hbox (badness 10000) in paragraph at lines 61--96
 
  []
 
@@ -854,7 +864,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  79i,16n,93p,1210b,1465s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (21 pages, 622753 bytes).
+Output written on main.pdf (21 pages, 623427 bytes).
 PDF statistics:
  176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -69,7 +69,7 @@ Queste ulteriori features permettono di definire  ed interpretrare il segnale co
 classici degli algoritmi di machine learning.
 
 \section{Speech Embeddings}
-L'obiettivo degli speech embeddings è quello di trasforare le sequenze di features estratte a partire dei metodi descritti prima
+L'obiettivo degli speech embeddings è quello di trasformare le sequenze di features estratte a partire dei metodi descritti prima
 in un vettore che cattura le caratteristiche distintive di ogni singolo speaker, rendendolo adatto per compiti come la speaker verification ed identification. 
 Questo vettore processato a partire dalle speech features prende il nome di \textbf{embeddings}. In letteratura sono stati usati diversi
 embeddings, spesso combinando diverse features tra di loro, sebbene oggi la strada più promettente è quella dell'utilizzo di metodi di deep learning. 
@@ -77,13 +77,12 @@ Gli embeddings estratti dai metodi di deep learning rappresentano l'identità di
 vocale di lunghezza variabile. 
 
 \subsection{I-Vectors e Deep Embeddings}
-Gli i-vectors sono stati per anni una rappresentazione standard e di successo per la speaker recognition.
-questi sono vettori a bassa dimensione derivati da un modello statistico chiamato Total Variability Space. Essi catturano 
-sia la variabilità legata al parlante che quella legata al canale di comunicazione. Nonostante la loro comprovata efficacia, 
-mostrano alcune limitazioni, soprattutto quando la durata dell'espressione vocale è breve. 
+Gli i-vectors sono stati per anni una rappresentazione standard e di successo per la speaker recognition. Questi sono vettori a bassa dimensione derivati
+da un modello statistico chiamato Total Variability Space. Essi catturano sia la variabilità legata al parlante che quella legata al canale di comunicazione. 
+Nonostante la loro comprovata efficacia, mostrano alcune limitazioni, soprattutto quando la durata dell'espressione vocale è breve. 
 L'introduzione delle Deep Neural Networks ha rivoluzionato il campo degli embeddings: l'idea è di addestrare una DNN per produrre 
-embedding che siano altamente discriminativi per l'identità del parlante. 
-Un approccio chiave è l'estrazione di embedding da segmenti di parlato. Invece di aggregare informazioni su un'intera espressione 
+embedding che siano altamente discriminativi per l'identità del parlante. \\
+Un approccio chiave è \textit{l'estrazione di embedding da segmenti di parlato}. Invece di aggregare informazioni su un'intera espressione 
 vocale all'inizio del processo, le DNN possono elaborare finestre temporali più piccole del segnale (segmenti) e poi aggregare le 
 informazioni a un livello successivo. Ad esempio, gli autori di \cite{snyder2017deep} hanno proposto un sistema in cui gli embeddings 
 vengono estratti da una rete di deep learning. La caratteristica distintiva di questo approccio è l'utilizzo di pooling temporale, che aggrega le informazioni 

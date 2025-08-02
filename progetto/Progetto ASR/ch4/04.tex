@@ -123,16 +123,16 @@ mentre i risultati sulla precisione del singolo speaker sono salvati nei rispett
 
 \section{Conclusioni}
 Alla luce delle sperimenazioni effettuate, dalla tabella Tab.\ref{tab:speakeridresult} vediamo come effettivamente
-tutti i modelli si comportano molto bene nella identificazione degli utenti. Tuttavia va precisato che la natura del dataset non è
-di grandi dimensioni, difatti abbiamo a disposizione circa 100 audio per ogni speaker, il che sicuramente è molto limitante come numero. 
+tutti i modelli si comportano molto bene nella identificazione degli utenti. Tuttavia va precisato che il dataset non è
+di grandi dimensioni, difatti abbiamo a disposizione circa 100 audio per ogni speaker per training, il che sicuramente è molto limitante come numero
+per riuscire ad apprendere caratteristiche raffinate. 
 Tuttavia, è nella fase di sperimentazione della Speaker Verification (riportate in tabella Tab.\ref{tab:speakerverresults}) dove notiamo che la 
-legge del rasoio di Occam non delude mai: difatti la rete che presenta le migliori prestazioni sembra essere la DNN tradizionale cone 
-estrazione degli embedding dal Bottleneck.
+che la rete che presenta le migliori prestazioni sembra essere la DNN tradizionale con estrazione degli embedding dal Bottleneck.
 
-Difatti entrambe le DNN presentate anche in termini di distribuzione degli scores da parte del backend (vedi Fig.5.1 e Fig.5.2) sia molto precisa
-nel trovare embedding abbastanza discriminanti. Discorso diverso invece va fatto per le due ultime reti,
-I-DNN e X-DNN, dove vediamo che la distribuzione è abbastanza spalmata e sovrapposta, sintomo che la rete non riesce ancora bene a distinguere. Questo 
-lo possiamo notare sopratutto dove la X-DNN riporta il peggior risultato in termini di EER. Questo potrebbe essere dovuto al fatto che la rete
+Difatti entrambe le DNN presentate, in termini di distribuzione degli scores da parte del backend (vedi Fig.5.1 e Fig.5.2) siano molto precise
+nel trovare embedding abbastanza discriminativi. Discorso diverso invece va fatto per le due ultime reti,
+I-DNN e X-DNN, dove vediamo che la distribuzione è abbastanza spalmata e sovrapposta, sintomo che la rete non riesce ancora bene a distinguere tra le varie identità.
+Questo lo possiamo notare sopratutto  nella X-DNN, che riporta il peggior risultato in termini di EER. Questo potrebbe essere dovuto al fatto che la rete
 presenta un numero di parametri abbastanza elevato e rischia di overfittare quasi subito, andando difatti a riconoscere bene gli speaker, ma nonr riuscendo
 a discriminare quelli "reali" da quelli "estranei". 
 
